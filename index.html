@@ -20,10 +20,10 @@
   <header class="header">
     <h1>Weather Dashboard</h1>
   </header>
-  <div class="container">
-    <div class="row">
+  <main class="container">
+    <section class="row">
 
-      <div class="col-sm-12 col-lg-3">
+      <section class="col-sm-12 col-lg-3">
 
         <!-- User input to choose city for weather display -->
         <form id="city-form">
@@ -39,27 +39,27 @@
           </button>
           <button id="clear-city-names" type="button" class="btn btn-primary btn-sm" title="Delete city list">X</button>
         </form>
-        <div id="city-list"></div>
-      </div>
-      <div class="col-sm-12 col-lg-9">
-        <div class="card">
-          <div class="card-body">
+        <article id="city-list"></article>
+      </section>
+      <section class="col-sm-12 col-lg-9">
+        <article class="card">
+          <article class="card-body">
             <h2 id="city-name">Enter City on the Left</h2>
             <p>Temperature: <span id="city-temp"></span> &deg;F</p>
             <p>Humidity: <span id="city-humid"></span>%</p>
             <p>Wind Speed: <span id="city-wind"></span> MPH</p>
             <p>Condition: <span id="city-condition"></span></p>
             <p>UV Index: <span id="uvIndex"></span></p>
-          </div>
-        </div>
-        <div>
+          </article>
+        </article>
+        <article>
           <h3>5-Day Forecast:</h3>
-        </div>
-        <div class="card-deck" id="weeklyForecast"></div>
-      </div>
-    </div>
+        </article>
+        <article class="card-deck" id="weeklyForecast"></article>
+      </section>
+    </section>
 
-  </div>
+  </main>
 
   <!-- My JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
