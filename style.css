@@ -33,3 +33,9 @@ header {
       flex-direction: column;
     }
   }
+
+/* Footer styling */
+
+.footer {
+  text-align: center;
+}
