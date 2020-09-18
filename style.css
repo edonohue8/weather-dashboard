@@ -1,3 +1,9 @@
+/* Universal font for webpages */
+
+* {
+  font-family: Arial, 'Times New Roman', Times, serif;
+}
+
 /* Styling for header */
 header {
     background-color: #ADD8E6;
@@ -6,6 +12,10 @@ header {
     padding: 20px;
   }
   
+  h1 {
+    font-family: Tahoma, sans-serif;
+  }
+
   input {
     width: 150px;
   }
