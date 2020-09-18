@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- My Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-lg-3">
+
+        <!-- User input to choose city for weather display -->
+        <form id="city-form">
+          <label for="city-input">Enter a city:</label>
+          
+          <br>
+
+          <input type="text" id="city-input">
+
+          <!-- My AJAX call button -->
+          <button type="submit" id="find-city" class="btn btn-primary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+          <button id="clear-city-names" type="button" class="btn btn-primary btn-sm" title="Delete city list">X</button>
+        </form>
+        <div id="city-list"></div>
+      </div>
+      <div class="col-sm-12 col-lg-9">
+        <div class="card">
+          <div class="card-body">
+            <h1 id="city-name">Enter City on the Left</h1>
+            <p>Temperature: <span id="city-temp"></span> &deg;F</p>
+            <p>Humidity: <span id="city-humid"></span>%</p>
+            <p>Wind Speed: <span id="city-wind"></span> MPH</p>
+            <p>Condition: <span id="city-condition"></span></p>
+            <p>UV Index: <span id="uvIndex"></span></p>
+          </div>
+        </div>
+        <div>
+          <h1>5-Day Forecast:</h1>
+        </div>
+        <div class="card-deck" id="weeklyForecast"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- My JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
